@@ -1,0 +1,162 @@
+@import url(common.css);
+
+body {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+/* wrapper */
+#put-aside-wrapper {
+  background-color: #1C305C;
+  height: 145%;
+  padding: 30% 10%;
+  text-align: center;
+}
+
+#put-aside h2 {
+  color: #FFF2E8;
+  padding-bottom: 10%;
+}
+
+/* パン選択 */
+.bread-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3% 0;
+  color: #FFF2E8;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 15%;
+  min-width: 100px;
+  justify-content: flex-start;
+}
+
+.quantity-control button {
+  width: 25%;
+  border-radius: 50%;
+  border: none;
+  background: #FFF2E8;
+  color: #1C305C;
+  cursor: pointer;
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+
+
+/* 日付 */
+.date-scroll {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-top: 10%;
+  padding-right: 2.5%;
+  gap: 1%;
+}
+
+.date-scroll input[type="radio"] {
+  display: none;
+}
+
+.date-scroll label {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #FFF2E8;
+  color: #1C305C;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.date-scroll input[type="radio"]:checked+label {
+  background-color: #ffd700;
+  color: #1C305C;
+}
+
+/* 時間 */
+select {
+  padding: 2% 0;
+  margin: 10% 2.5%;
+  width: 60%;
+  text-align: center;
+  font-size: 1.1em;
+  border-radius: 9999px;
+  background-color: #FFF2E8;
+}
+
+/* 名前・メール */
+p {
+  color: #FFF2E8;
+  margin-bottom: 3px;
+  font-size: 1.1em;
+}
+
+input[type="text"] {
+  border-radius: 9999px;
+  background-color: #FFF2E8;
+  margin-bottom: 15px;
+  height: 2em;
+  width: 50%;
+  padding: 0 5%;
+}
+
+input[type="email"] {
+  border-radius: 999px;
+  background-color: #FFF2E8;
+  width: 70%;
+  height: 2em;
+  margin: 0 0 10%;
+  padding: 0 5%;
+}
+
+/* 送信ボタン */
+input[type="submit"] {
+  margin: 10% auto 20% auto;
+  padding: 1% 0;
+  width: 80%;
+  border-radius: 9999px;
+  font-size: 1.2em;
+  color: #1C305C;
+  background-color: #ffd700;
+}
+
+/* BACK */
+.link-buttom {
+  display: block;
+  background-color: #EC6800;
+  color: #FFF2E8;
+  padding: 3.8% 7% 3.8%;
+  text-decoration: none;
+  font-weight: bold;
+  position: absolute;
+  font-size: 15px;
+  transition: transform 0.2s ease;
+  text-align: center;
+  width: 55%;
+  right: 0;
+  margin: 10% 0;
+}
+
+.link-buttom::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 0;
+  transform: translateY(-50%);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 16px solid #1C305C;
+}
+
+.link-buttom:hover {
+  transform: translateY(2px);
+}

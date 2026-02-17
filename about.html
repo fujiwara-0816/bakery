@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta lang="ja">
+  <meta charset="UTF-8">
+  <title>星降るパン屋</title>
+  <meta name="description" content="説明をここに書く">
+  <meta name="keywords" content="ページのキーワードを書く">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/about.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'wtc7hvz',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="メニュー">
+      <img src="img/menu-icon2x.png" alt="メニューアイコン">
+    </button>
+  </header>
+
+  <!-- ナビゲーション -->
+  <nav class="nav-menu">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="about.html">お店について</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="put-aside.html">お取り置き</a></li>
+      </ul>
+      <button class="nav-close">
+        <img src="img/close-icon2x.png" alt="メニューを閉じる">
+      </button>
+    </div>
+  </nav>
+
+  <!-- メイン -->
+  <main id="about">
+    <div id="story1">
+      <img src="img/story1.png">
+    </div>
+    <div id="story2" class="scene">
+      <p>星降るパン屋の店主は、<br>夜遅くまで頑張る奥さんのために<br>パンを焼いていました。</p>
+      <img class="anime" src="img/story2.png">
+    </div>
+    <div id="story3" class="scene">
+      <p>やがて、その想いは<br>夜を生きる人々へ――。</p>
+      <img class="anime" src="img/story3.png">
+    </div>
+    <div id="story4" class="scene">
+      <p>こうして、夜だけに開く<br>小さなパン屋が誕生しました。</p>
+      <img class="anime" src="img/story4.png">
+    </div>
+    <div id="story5" class="scene">
+      <p>星降るパン屋は頑張る人のための<br>夜の小さな隠れ家です。</p>
+      <img class="anime" src="img/story5.png">
+    </div>
+    <a href="index.html#features" class="link-buttom">戻る ▶︎</a>
+  </main>
+
+  <!-- フッター-->
+  <footer>
+    <ul class="sns-icons">
+      <li><a href="#"><img src="img/instagram-icon2x.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="img/twitter-icon2x.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="img/facebook-icon2x.png" alt="Facebook"></a></li>
+    </ul>
+    <div class="footer-logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <p class="copyright">
+      <small>&copy;2025hoshihurubakery</small>
+    </p>
+  </footer>
+</body>
+<script src="java/menu.js"></script>
+<script src="java/story.js"></script>
+
+</html>

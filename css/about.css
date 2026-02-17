@@ -1,0 +1,146 @@
+@import url(common.css);
+
+body {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+/* ABAUTここから */
+#about {
+  margin: auto;
+  padding: 100px 0;
+  width: 100%;
+  max-width: 500px;
+  height: 470%;
+  background-color: #1C305C;
+  color: #FFF2E8;
+  text-align: center;
+}
+
+#about p {
+  font-size: clamp(18px, 4.3vw, 22px);
+  line-height: clamp(20px, 5.5vw, 30px);
+}
+
+/* イラスト */
+img {
+  width: 100%;
+  max-width: 500px;
+}
+
+img.anime {
+  width: 100%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.anime.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ここまで */
+/* テキスト */
+
+#story1 {
+  position: relative;
+  z-index: 900;
+}
+
+#story2 {
+  position: absolute;
+  top: 90%;
+  z-index: 800;
+}
+
+#story3 {
+  position: absolute;
+  top: 160%;
+  z-index: 600;
+}
+
+#story4 {
+  position: absolute;
+  top: 240%;
+  z-index: 400;
+}
+
+#story5 {
+  position: absolute;
+  top: 340%;
+}
+
+#story2 p {
+  color: #1C305C;
+  text-align: left;
+  position: absolute;
+  top: 22%;
+  left: 10%;
+  z-index: 800;
+}
+
+#story3 p {
+  text-align: left;
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  z-index: 600;
+}
+
+#story4 p {
+  color: #1C305C;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 400;
+}
+
+#story5 p {
+  color: #1C305C;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 200;
+}
+
+/* ここまで */
+/* リンクボタン */
+.link-buttom {
+  display: block;
+  background-color: #EC6800;
+  color: #FFF2E8;
+  padding: 3.8% 7% 3.8%;
+  text-decoration: none;
+  font-weight: bold;
+  position: absolute;
+  top: 440%;
+  font-size: 15px;
+  transition: transform 0.2s ease;
+  text-align: center;
+  width: 55%;
+  right: 0;
+  margin: 10% 0;
+}
+
+.link-buttom::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 0;
+  transform: translateY(-50%);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 16px solid #1C305C;
+}
+
+.link-buttom:hover {
+  transform: translateY(2px);
+}

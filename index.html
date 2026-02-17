@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta lang="ja">
+  <meta charset="UTF-8">
+  <title>星降るパン屋</title>
+  <meta name="description" content="説明をここに書く">
+  <meta name="keywords" content="ページのキーワードを書く">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'wtc7hvz',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="メニュー">
+      <img src="img/menu-icon2x.png" alt="メニューアイコン">
+    </button>
+  </header>
+
+  <a href="#features">
+    <div class="scroll_down" id="scroll_down">
+      <div class="arrow"></div>
+      <span class="scroll_down-text">Scroll</span>
+    </div>
+  </a>
+
+  <!-- ナビゲーション -->
+  <nav class="nav-menu">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="about.html">お店について</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="put-aside.html">お取り置き</a></li>
+      </ul>
+      <button class="nav-close">
+        <img src="img/close-icon2x.png" alt="メニューを閉じる">
+      </button>
+    </div>
+  </nav>
+
+  <!-- オープニング -->
+  <div id="cloud">
+    <img src="img/op-top.png" class="cloud-top">
+    <img src="img/op-bottom.png" class="cloud-bottom">
+  </div>
+
+  <!-- メイン -->
+  <main>
+    <!-- トップ -->
+    <img class="top-cloud" src="img/cloud.png">
+    <section class="top">
+      <div class="top-img">
+        <img src="img/top-moon.png">
+      </div>
+      <div class="top-bottom-img">
+        <img src="img/top-bottom.png">
+      </div>
+    </section>
+    <!-- お店について -->
+    <section id="features" class="features">
+      <div class="text-wrap">
+        <p class="text">
+          街が眠る頃、<br>
+          古い洋館に灯る小さな明かり。<br>
+          夜だけ開く「星降るパン屋」で、<br>
+          焼きたての香りと<br>
+          星明かりのようなひとときを。
+        </p>
+        <img src="img/intro.png">
+      </div>
+      <a href="about.html" class="link-buttom">お店について ▶︎</a>
+    </section>
+    <!-- メニュー -->
+    <section id="menu">
+      <div class="swiper mySwiper">
+        <h1>おすすめメニュー</h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="menu-img"><img src="img/meronpan.jpg"></div>
+            <h2>満月めろんぱん</h2>
+            <p>
+              夜空にぽっかり浮かぶまあるいしあわせ。外はさくっ、中はふんわりのめろんぱん。<br>甘い月明かりのようなひとときを。
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <div class="menu-img"><img src="img/croissant.png"></div>
+            <h2>三日月クロワッサン</h2>
+            <p>
+              夜風に吹かれるような軽やかさ。<br>バターの香りがふわっと広がり重なり合う層が奏でる<br>サクサクの月の音。
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <div class="menu-img"><img src="img/creambread.jpg"></div>
+            <h2>月の雫クリームパン</h2>
+            <p>
+              とろり、しっとり、ひとしずくの魔法。<br>まるで月からこぼれた雫のようにやさしく甘く、心を包みます。
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <a href="menu.html" class="link-buttom2">メニュー ▶︎</a>
+    </section>
+
+    <!-- 予約ページ -->
+    <section id="reservation" class="reservation">
+      <div class="reservation-text">
+        <h2>
+          焼きたてを確実に<br>あなたのもとへ
+        </h2>
+        <p>
+          あなたの”特別”を、<br>そっとお取り置きいたします。
+        </p>
+      </div>
+      <a href="put-aside.html"><img src="img/put-aside.png"></a>
+    </section>
+
+    <!-- アクセス -->
+    <section id="sales">
+      <h1>お店のご案内</h1>
+      <h3>営業時間</h3>
+      <p>19:00~24:00</p>
+
+      <h3>お問い合わせ</h3>
+      <p>xxx-xxxx-xxxx</p>
+
+      <h3>場所</h3>
+      <p>〒151-0053 東京都渋谷区<br>代々木１丁目３７−４</p>
+      <div class="access">
+        <p>南新宿駅から徒歩５分</p>
+        <p>JR　代々木駅北口から徒歩３分</p>
+        <p>代々木駅バス停から徒歩４分</p>
+      </div>
+      <div class="map">
+        <img src="img/map.png" alt="地図の画像">
+        <a href="https://maps.app.goo.gl/EohcHi9CS5kC8t5EA" class="google-link">Googleマップでルート検索</a>
+      </div>
+      <!-- ここにマップ -->
+
+    </section>
+
+
+    <!-- お知らせ -->
+    <section id="news" class="news">
+      <h2>お知らせ</h2>
+      <a href="news/news1.html">
+        <dl>
+          <dt>2025/06/25</dt>
+          <dd>【新商品】星降るシナモンロールができました</dd>
+        </dl>
+      </a>
+      <a href="news/news2.html">
+        <dl>
+          <dt>2025/06/23</dt>
+          <dd>【季節のお便り】満月めろんぱん、好評です</dd>
+        </dl>
+      </a>
+      <a href="news/news3.html">
+        <dl>
+          <dt>2025/06/16</dt>
+          <dd>【店内のご紹介】小さな洋館のパン屋より</dd>
+        </dl>
+      </a>
+    </section>
+  </main>
+
+  <!-- フッター-->
+  <footer>
+    <ul class="sns-icons">
+      <li><a href="#"><img src="img/instagram-icon2x.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="img/twitter-icon2x.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="img/facebook-icon2x.png" alt="Facebook"></a></li>
+    </ul>
+    <div class="footer-logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <p class="copyright">
+      <small>&copy;2025hoshihurubakery</small>
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="java/menu.js"></script>
+  <script src="java/op.js"></script>
+  <script src="java/anime.js"></script>
+
+  <!-- <script src="java/text.js"></script> -->
+</body>
+
+</html>

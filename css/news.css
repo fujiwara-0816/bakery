@@ -1,0 +1,81 @@
+@import url(common.css);
+
+body {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+main {
+  background-color: #1C305C;
+  width: 100%;
+}
+
+.news-wrapper {
+  padding: 35% 8% 30%;
+  color: #FFF2E8;
+}
+
+h1 {
+  border-top: 1px solid #FFF2E8;
+  border-bottom: 1px solid #FFF2E8;
+  margin-bottom: 10%;
+}
+
+h2 {
+  font-size: 23px;
+  margin-bottom: 3%;
+}
+
+.date {
+  margin: 2%;
+}
+
+.text {
+  font-size: 18px;
+  margin: 15% 0 0;
+}
+
+.news-img-wrapper {
+  width: 100%;
+  padding: 10%;
+}
+
+.news-img {
+  width: 100%;
+  border-radius: 25px;
+  border: 15px solid #FFF2E8;
+}
+
+.link-buttom {
+  display: block;
+  background-color: #EC6800;
+  color: #FFF2E8;
+  padding: 3.8% 7% 3.8%;
+  text-decoration: none;
+  font-weight: bold;
+  position: absolute;
+  font-size: 15px;
+  transition: transform 0.2s ease;
+  text-align: center;
+  width: 55%;
+  right: 0;
+  margin: 10% 0;
+}
+
+.link-buttom::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 0;
+  transform: translateY(-50%);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 16px solid #1C305C;
+}
+
+.link-buttom:hover {
+  transform: translateY(2px);
+}

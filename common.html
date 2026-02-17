@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta lang="ja">
+  <meta charset="UTF-8">
+  <title>星降るパン屋</title>
+  <meta name="description" content="説明をここに書く">
+  <meta name="keywords" content="ページのキーワードを書く">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'wtc7hvz',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="メニュー">
+      <img src="img/menu-icon2x.png" alt="メニューアイコン">
+    </button>
+  </header>
+
+  <!-- ナビゲーション -->
+  <nav class="nav-menu">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="about.html">お店について</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="put-aside.html">お取り置き</a></li>
+      </ul>
+      <button class="nav-close">
+        <img src="img/close-icon2x.png" alt="メニューを閉じる">
+      </button>
+    </div>
+  </nav>
+
+  <!-- メイン -->
+  <main>
+  </main>
+
+  <!-- フッター-->
+  <footer>
+    <ul class="sns-icons">
+      <li><a href="#"><img src="img/instagram-icon2x.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="img/twitter-icon2x.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="img/facebook-icon2x.png" alt="Facebook"></a></li>
+    </ul>
+    <div class="footer-logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <p class="copyright">
+      <small>&copy;2025hoshihurubakery</small>
+    </p>
+  </footer>
+</body>
+<script src="java/menu.js"></script>
+
+</html>

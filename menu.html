@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta lang="ja">
+  <meta charset="UTF-8">
+  <title>星降るパン屋</title>
+  <meta name="description" content="説明をここに書く">
+  <meta name="keywords" content="ページのキーワードを書く">
+  <link rel="stylesheet" href="css/menu.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'wtc7hvz',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="メニュー">
+      <img src="img/menu-icon2x.png" alt="メニューアイコン">
+    </button>
+  </header>
+
+  <!-- ナビゲーション -->
+  <nav class="nav-menu">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="about.html">お店について</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="put-aside.html">お取り置き</a></li>
+      </ul>
+      <button class="nav-close">
+        <img src="img/close-icon2x.png" alt="メニューを閉じる">
+      </button>
+    </div>
+  </nav>
+
+  <!-- メイン -->
+  <main id="menupage-wrapper">
+    <h1><img src="img/menu-title.png" alt="メニュー"></h1>
+    <div id="menupage">
+      <section id="menu-contents">
+        <h2>パン</h2>
+        <ul>
+          <li class="open-modal" data-target="modal1">
+            <img src="img/meronpan.jpg" alt="満月メロンパンの写真">
+            <p class="name">満月メロンパン</p>
+            <p>220円</p>
+          </li>
+          <li class="open-modal" data-target="modal2">
+            <img src="img/croissant.png" alt="三日月クロワッサンの写真">
+            <p class="name">三日月クロワッサン</p>
+            <p>260円</p>
+          </li>
+          <li class="open-modal" data-target="modal3">
+            <img src="img/creambread.jpg" alt="月の雫クリームパンの写真">
+            <p class="name">月の雫クリームパン</p>
+            <p>280円</p>
+          </li>
+          <li class="open-modal" data-target="modal4">
+            <img src="img/cinnamon roll.jpg" alt="星屑シナモンロールの写真">
+            <p class="name">星屑シナモンロール</p>
+            <p>300円</p>
+          </li>
+          <li class="open-modal" data-target="modal5">
+            <img src="img/milkbread.jpg" alt="夢心地ミルクぱんの写真">
+            <p class="name">夢心地ミルクパン</p>
+            <p>200円</p>
+          </li>
+        </ul>
+        <h2>ドリンク</h2>
+        <small>イートインのお客様のみの提供になります。</small>
+        <ul>
+          <li class="open-modal" data-target="modal6">
+            <img src="img/caffelate.jpg" alt="夜更かしカフェオレの写真">
+            <p class="name">夜更かしカフェオレ</p>
+            <p>380円</p>
+          </li>
+          <li class="open-modal" data-target="modal7">
+            <img src="img/milktea.jpg" alt="まどろみミルクティーの写真">
+            <p class="name">まどろみミルクティー</p>
+            <p>360円</p>
+          </li>
+          <li class="open-modal" data-target="modal8">
+            <img src="img/hotmilk.jpg" alt="雲まくらミルクの写真">
+            <p class="name">雲まくらミルク</p>
+            <p>320円</p>
+          </li>
+          <li class="open-modal" data-target="modal9">
+            <img src="img/creamsoda.jpg" alt="星空クリームソーダの写真">
+            <p class="name">星空クリームソーダ</p>
+            <p>420円</p>
+          </li>
+          <li class="open-modal" data-target="modal10">
+            <img src="img/lemonede.png" alt="月明かりレモネードの写真">
+            <p class="name">月明かりレモネード</p>
+            <p>380円</p>
+          </li>
+        </ul>
+      </section>
+
+      <a href="index.html#menu" class="link-buttom">戻る ▶︎</a>
+
+      <!-- モーダル内 -->
+      <div class="modal" id="modal1">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>満月メロンパン</h3>
+          <p class="price">220円</p>
+          <img src="img/meronpan.jpg" alt="満月メロンパンの写真">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>小麦</span>
+            <span>卵</span>
+            <span>乳</span>
+          </div>
+          <p class="text"> 夜空にぽっかり浮かぶまあるいしあわせ。外はさくっ、中はふんわりのめろんぱん。<br>甘い月明かりのようなひとときを。</p>
+        </div>
+      </div>
+      <div class="modal" id="modal2">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>三日月クロワッサン</h3>
+          <p class="price">260円</p>
+          <img src="img/croissant.png" alt="三日月クロワッサンの写真">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>小麦</span>
+            <span>乳</span>
+          </div>
+          <p class="text">夜風に吹かれるような軽やかさ。<br>バターの香りがふわっと広がり重なり合う層が奏でるサクサクの月の音。</p>
+        </div>
+      </div>
+      <div class="modal" id="modal3">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>月の雫クリームパン</h3>
+          <p class="price">280円</p>
+          <img src="img/creambread.jpg" alt="月の雫クリームパンの写真">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>小麦</span>
+            <span>卵</span>
+            <span>乳</span>
+          </div>
+          <p class="text">とろり、しっとり、ひとしずくの魔法。<br>まるで月からこぼれた雫のようにやさしく甘く、心を包みます。</p>
+        </div>
+      </div>
+      <div class="modal" id="modal4">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>星屑シナモンロール</h3>
+          <p class="price">300円</p>
+          <img src="img/cinnamon roll.jpg" alt="星屑シナモロール">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>小麦</span>
+            <span>卵</span>
+            <span>乳</span>
+          </div>
+          <p class="text">ふわりと広がる甘い風。散りばめられた星屑のように、香ばしいシナモンが貴方の夜にきらめきを添えます。</p>
+        </div>
+      </div>
+      <div class="modal" id="modal5">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>夢心地ミルクパン</h3>
+          <p class="price">200円</p>
+          <img src="img/milkbread.jpg" alt="夢心地ミルクパンの写真">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>小麦</span>
+            <span>乳</span>
+          </div>
+          <p class="text">しっとりとした口あたりに、やさしいミルクの甘さ。夢の入り口でふんわり漂うようなまろやかな、パンです。</p>
+        </div>
+      </div>
+      <div class="modal" id="modal6">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>夜更かしカフェオレ</h3>
+          <p class="price">380円</p>
+          <img src="img/caffelate.jpg" alt="夜更かしカフェオレの写真">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>乳</span>
+          </div>
+          <p class="text">香ばしいコーヒーとまろやかなミルクの調和。夜更かしのひとときに寄り添う、やさしい大人の味わい。</p>
+        </div>
+      </div>
+      <div class="modal" id="modal7">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>まどろみミルクティー</h3>
+          <p class="price">360円</p>
+          <img src="img/milktea.jpg" alt="まどろみミルクティーの写真">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>乳</span>
+          </div>
+          <p class="text">紅茶の豊かな香りとやわらかなミルクのハーモニー。まどろみに身をゆだねたくなる、心ほどける一杯。</p>
+        </div>
+      </div>
+      <div class="modal" id="modal8">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>雲まくらミルク</h3>
+          <p class="price">320円</p>
+          <img src="img/hotmilk.jpg" alt="雲枕ミルクの写真">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>乳</span>
+          </div>
+          <p class="text">ふわふわの泡立ちと濃厚なホットミルク。まるで雲を枕にしたような、やさしく包み込む口あたり。</p>
+        </div>
+      </div>
+      <div class="modal" id="modal9">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>星空クリームソーダ</h3>
+          <p class="price">420円</p>
+          <img src="img/creamsoda.jpg" alt="星空クリームソーダの写真">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>乳</span>
+          </div>
+          <p class="text">きらめく泡に浮かぶアイスクリーム。星空を閉じ込めたような、甘くはじける夢のソーダ。</p>
+        </div>
+      </div>
+      <div class="modal" id="modal10">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>月明かりレモネード</h3>
+          <p class="price">380円</p>
+          <img src="img/lemonede.png" alt="月明かりレモネード">
+          <div class="allergy">
+            <h4>アレルギー情報</h4>
+            <span>蜂蜜</span>
+          </div>
+          <p class="text">透きとおる酸味とほのかな甘さ。月明かりのように静かに寄り添う、さわやかなレモネード。</p>
+        </div>
+      </div>
+      <!-- モーダル内容ここまで -->
+    </div>
+  </main>
+
+  <!-- フッター-->
+  <footer>
+    <ul class="sns-icons">
+      <li><a href="#"><img src="img/instagram-icon2x.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="img/twitter-icon2x.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="img/facebook-icon2x.png" alt="Facebook"></a></li>
+    </ul>
+    <div class="footer-logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <p class="copyright">
+      <small>&copy;2025hoshihurubakery</small>
+    </p>
+  </footer>
+</body>
+<script src="java/modal.js"></script>
+<script src="java/menu.js"></script>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta lang="ja">
+  <meta charset="UTF-8">
+  <title>星降るパン屋</title>
+  <meta name="description" content="説明をここに書く">
+  <meta name="keywords" content="ページのキーワードを書く">
+  <link rel="stylesheet" href="css/put-aside.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'wtc7hvz',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="メニュー">
+      <img src="img/menu-icon2x.png" alt="メニューアイコン">
+    </button>
+  </header>
+
+  <!-- ナビゲーション -->
+  <nav class="nav-menu">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="about.html">お店について</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="put-aside.html">お取り置き</a></li>
+      </ul>
+      <button class="nav-close">
+        <img src="img/close-icon2x.png" alt="メニューを閉じる">
+      </button>
+    </div>
+  </nav>
+
+  <!-- メイン -->
+  <main id="put-aside-wrapper">
+    <section id="put-aside">
+      <h2>お取り置き予約</h2>
+      <form class="put-aside">
+        <div class="bread-item-wrapper">
+          <div class="bread-item">
+            <span class="bread-name">満月メロンパン</span>
+            <span class="quantity-control">
+              <button class="minus">－</button>
+              <span class="quantity">0</span>
+              <button class="plus">＋</button>
+            </span>
+          </div>
+          <div class="bread-item">
+            <span class="bread-name">三日月クロワッサン</span>
+            <span class="quantity-control">
+              <button class="minus">－</button>
+              <span class="quantity">0</span>
+              <button class="plus">＋</button>
+            </span>
+          </div>
+          <div class="bread-item">
+            <span class="bread-name">月の雫クリームパン</span>
+            <span class="quantity-control">
+              <button class="minus">－</button>
+              <span class="quantity">0</span>
+              <button class="plus">＋</button>
+            </span>
+          </div>
+          <div class="bread-item">
+            <span class="bread-name">星屑シナモロール</span>
+            <span class="quantity-control">
+              <button class="minus">－</button>
+              <span class="quantity">0</span>
+              <button class="plus">＋</button>
+            </span>
+          </div>
+          <div class="bread-item">
+            <span class="bread-name">夢心地ミルクパン</span>
+            <span class="quantity-control">
+              <button class="minus">－</button>
+              <span class="quantity">0</span>
+              <button class="plus">＋</button>
+            </span>
+          </div>
+        </div>
+        <div id="date-scroll" class="date-scroll"></div>
+        <select id="pickup-time" name="pickup-time" required>
+          <option value="19:00-19:30">19:00-19:30</option>
+          <option value="19:30-20:00">19:30-20:00</option>
+          <option value="20:00-20:30">20:00-20:30</option>
+          <option value="20:30-21:00">20:30-21:00</option>
+          <option value="21:00-21:30">21:00-21:30</option>
+          <option value="21:30-22:00">21:30-22:00</option>
+          <option value="22:00-22:30">22:00-22:30</option>
+          <option value="22:30-23:00">22:30-23:00</option>
+          <option value="23:00-23:30">23:00-23:30</option>
+          <option value="23:30-24:00">23:30-24:30</option>
+        </select><br>
+        <label>
+          <p>お名前</p><input type="text" name="name">
+        </label><br>
+        <label>
+          <p>メールアドレス</p><input type="email">
+        </label><br>
+        <input type="submit" value="予約する">
+      </form>
+    </section>
+    <a href="index.html#reservation" class="link-buttom">戻る ▶︎</a>
+  </main>
+
+  <!-- フッター-->
+  <footer>
+    <ul class="sns-icons">
+      <li><a href="#"><img src="img/instagram-icon2x.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="img/twitter-icon2x.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="img/facebook-icon2x.png" alt="Facebook"></a></li>
+    </ul>
+    <div class="footer-logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="星降るパン屋のロゴ">
+      </a>
+    </div>
+    <p class="copyright">
+      <small>&copy;2025hoshihurubakery</small>
+    </p>
+  </footer>
+</body>
+<script src="java/date.js"></script>
+<script src="java/menu.js"></script>
+
+</html>
